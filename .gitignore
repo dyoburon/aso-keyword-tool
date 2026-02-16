@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+results.json
+results_clean.json
+.DS_Store

@@ -1,6 +1,13 @@
 # ASO Keyword Tool
 
-App Store keyword difficulty and opportunity scorer. Queries Apple's free APIs to estimate how hard it is to rank for a keyword and how much search traffic it gets.
+Free App Store keyword research — no paid tools, no accounts, no API keys.
+
+This tool hits two free, unauthenticated Apple APIs to score keywords on difficulty and traffic:
+
+1. **iTunes Search API** — returns up to 200 apps per keyword with metadata (ratings, titles, update dates), used to measure how competitive a keyword is
+2. **Apple MZSearchHints API** — returns autocomplete suggestions (0-10 per keyword), used as a traffic proxy
+
+The key insight: Apple's autocomplete suggestion count **varies per keyword** (0-10). More suggestions = more people searching for that term. Most paid ASO tools charge $50-200/month for this same signal. This tool pairs that traffic estimate with a difficulty score based on competitor strength, then finds the **opportunity gap** — high-traffic keywords that nobody is competing for yet.
 
 ## Setup
 
